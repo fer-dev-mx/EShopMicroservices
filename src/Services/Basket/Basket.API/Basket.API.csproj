@@ -22,7 +22,6 @@
     <Folder Include="Dtos\" />
     <Folder Include="Exceptions\" />
     <Folder Include="GrpcServices\" />
-    <Folder Include="Models\" />
   </ItemGroup>
 
 </Project>
