@@ -13,4 +13,16 @@
     <PackageReference Include="Microsoft.VisualStudio.Azure.Containers.Tools.Targets" Version="1.21.0" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Basket\CheckoutBasket\" />
+    <Folder Include="Basket\DeleteBasket\" />
+    <Folder Include="Basket\GetBasket\" />
+    <Folder Include="Basket\StoreBasket\" />
+    <Folder Include="Data\" />
+    <Folder Include="Dtos\" />
+    <Folder Include="Exceptions\" />
+    <Folder Include="GrpcServices\" />
+    <Folder Include="Models\" />
+  </ItemGroup>
+
 </Project>
