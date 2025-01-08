@@ -7,6 +7,6 @@ public class GetBasketQueryHandler : IQueryHandler<GetBasketQuery, GetBasketResu
 {
     public async Task<GetBasketResult> Handle(GetBasketQuery query, CancellationToken cancellationToken)
     {
-        throw new NotImplementedException();
+        return new GetBasketResult(new ShoppingCart(query.UserName));
     }
 }
