@@ -13,6 +13,19 @@ services:
     image: postgres
     volumes:
       - postgres_catalog:/var/lib/postgresql/data/
+
+  basketdb:
+    container_name: basketdb
+    environment:
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=postgres
+      - POSTGRES_DB=BasketDb
+    restart: always
+    ports:
+      - "5433:5432"
+    image: postgres
+    volumes:
+      - postgres_basket:/var/lib/postgresql/data/
   
   catalog.api:
     environment:
